@@ -1,13 +1,20 @@
 .header{
-    background-color:rgb(3 19 32);
+    background-color: transparent;
+    margin-top: 0px;
+    display: flex;
+    padding: 1rem 5rem;
+    position: fixed;
+    z-index: 99;    
+}
+.headerColorfull{
+    background-color:#031320;
     margin-top: 0px;
     display: flex;
     padding: 1rem 5rem;
     position: fixed;
     z-index: 99;
-    
 }
-.header div img{
+.header div img , .headerColorfull div img{
     height: 70px;
 }
 .headerlist{
@@ -19,7 +26,7 @@
     align-items: center;
 }
 
-.header div li a , .header div li div div li a {
+.header div li a , .header div li div div li a , .headerColorfull div li a , .headerColorfull div li div div li a{
     list-style: none;
     text-decoration: none;
     /* margin-left: auto; */
@@ -29,7 +36,7 @@
     color: white;
     font-weight: bold;
 }
-.header div li div{
+.header div li div , .headerColorfull div li div{
     color: white;
     list-style: none;
     font-weight: bold;

@@ -5,9 +5,24 @@ import { Link } from 'react-router-dom'
 import './Header.css'
 
 const Header = () => {
+
+    const [headerStyle,setHeader] = React.useState("container-fluid header");
+    React.useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+    }, [])
+
+     const handleScroll=()=>{
+        if (window.pageYOffset > 0) {
+                setHeader("container-fluid headerColorfull");
+        }else{
+            setHeader("container-fluid header");
+        }
+    }
+    
+
     return (
 
-        <div className=" container-fluid header">
+        <div className={headerStyle}>
             <div className="headerLogo">
                 <img src="./img/logoh.png" alt="" />
             </div>
