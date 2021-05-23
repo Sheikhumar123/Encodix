@@ -1,0 +1,15 @@
+.portfolio{
+    background-image: url('./portfoliobg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    color: #fff;
+    padding-top: 12rem;
+}
+.portfoliologo{
+    text-align: center;
+    
+}
+.portfoliologo div{
+    padding-top: 1rem;
+}

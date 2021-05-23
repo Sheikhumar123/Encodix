@@ -1,0 +1,30 @@
+.cardimg{
+    width: 70%;
+    text-align: center;
+    border-radius: 10px;
+}
+.card{
+    border: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    background-color: inherit;
+    color: #fff;
+    margin-top: 0px;
+}
+.line{
+    content: "";
+    margin-left: auto;
+    margin-right: auto;
+    /* position: absolute; */
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #3fbbc0;
+    bottom: 0;
+    left: calc(50% - 25px);
+}
+.card p{
+    margin-top: 1rem;
+}

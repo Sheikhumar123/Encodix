@@ -1,0 +1,35 @@
+.containerCareer{
+        background-image: url("./careerpic.jpg");
+        background-repeat: no-repeat;
+    background-size: cover;
+    color: #a9b1b6;
+    padding-top: 7rem;
+
+ }
+ .careerList{
+     list-style: none;
+ }
+ .careerform{
+     padding: 5rem;
+ }
+ .careerTextBox{
+    background-image: linear-gradient( 
+        70deg
+         , #006c7f, #0e8d99, #1cadb2, #1cadb2, #039590, #006c7f );
+            border-color: #00f9f7;
+            color: #fff;
+ }
+ .careerbtn {
+   
+    width: 140px; 
+    
+        width: 10rem;
+        height: 2rem;
+        border-radius: 5px;
+        background-image: linear-gradient( 70deg , #006c7f, #0e8d99, #1cadb2, #1cadb2, #039590, #006c7f );
+        border: solid 2px rgb(59 219 214);
+        border: 0;
+    
+    
+}
+

@@ -1,0 +1,81 @@
+.header{
+    background-color:rgb(3 19 32);
+    margin-top: 0px;
+    display: flex;
+    padding: 1rem 5rem;
+    position: fixed;
+    z-index: 99;
+    
+}
+.header div img{
+    height: 70px;
+}
+.headerlist{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.header div li a , .header div li div div li a {
+    list-style: none;
+    text-decoration: none;
+    /* margin-left: auto; */
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    color: white;
+    font-weight: bold;
+}
+.header div li div{
+    color: white;
+    list-style: none;
+    font-weight: bold;
+
+}
+.github{
+    height: 2rem;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+      border-radius: 8px;
+    display: none;
+    position: absolute;
+    background-color:black;
+    min-width: 10rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 10px;
+    z-index: 1;
+}
+
+
+.dropdown:hover .dropdown-content {
+     
+    display: block;
+    
+  }
+  
+  .dropdown-content li:hover{
+      /* opacity: .3; */
+      cursor: pointer;
+      color: #3fbbc0;
+  }
+  .dropdown-content li a:hover{
+    color: #3fbbc0;
+      
+  }
+  .headerlist li a:hover{
+      color: #3fbbc0;
+  }
+
+
+
+
+
+    
