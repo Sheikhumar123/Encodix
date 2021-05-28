@@ -9,7 +9,9 @@ export default function Footer() {
                     <Data/>
                 </div>
                 
-                <div className="foot-copyright">
+                
+            </div>
+            <div className="foot-copyright">
                     <div className="copyright">
                         <div>@ Copyright Encodix All Rights Reserved</div>
                         <div>
@@ -18,7 +20,6 @@ export default function Footer() {
 
                     </div>
                 </div>
-            </div>
 
         </footer>
     )

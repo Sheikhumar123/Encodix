@@ -12,7 +12,60 @@
 .aboutcenter{
     text-align: center; 
     margin-top: 2rem;
+    animation: animate-from-top 5s; 
+  
 }
+.aboutcenter div{
+  padding-top: 2rem;
+}
+
+
+
+@keyframes animate-from-top {
+  
+  0% {
+    opacity: 0;
+    margin-top: -2rem;
+  }
+  
+  100% {
+    opacity: 1;
+    margin-top: 2rem;
+  }
+}
+.left-div{
+  animation: animate-from-left 5s; 
+
+}
+@keyframes animate-from-left {
+  
+  0% {
+    opacity: 0;
+    margin-left: -2rem;
+  }
+  
+  100% {
+    opacity: 1;
+    margin-top: 0rem;
+  }
+}
+/* .right-div{
+  animation: animate-from-right 5s; 
+
+}
+@keyframes animate-from-right {
+  
+  0% {
+    opacity: .5;
+    margin-left: 5rem;
+  }
+  
+  100% {
+    opacity: 1;
+    margin-top: 0rem;
+  }
+} */
+
 .box{
     text-align: left;
    

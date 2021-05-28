@@ -1,14 +1,27 @@
-import React from 'react'
-import solid from "./img/box-solid.svg"
-import code from './img/code-slash.svg'
-import diamond from './img/suit-diamond.svg'
-import link from './img/link.svg'
-import square from './img/app-indicator.svg'
-import diagram from './img/diagram-3-fill.svg'
+import React , {useState , useEffect} from 'react'
+import solid from "./img/cubes.svg"
+import code from './img/programming-code-signs.svg'
+import diamond from './img/ethereum.svg'
+import link from './img/decentralized.svg'
+import square from './img/group.svg'
+import diagram from './img/sitemap.svg'
 import ServiceBox from './ServiceBox/ServiceBox'
 import './Services.css'
 
-const Services = () => {
+const Services = ( {background}) => {
+    console.log(background);
+    const [state, setstate] = useState();
+
+useEffect(() => {
+    if(background  === true){
+        setstate(true)
+    }else{
+        setstate(false)
+    }
+}, [])
+
+    
+
     
     return (
         <div>
@@ -18,7 +31,7 @@ const Services = () => {
 
 
 
-            <div className="sservices">
+            <div className={state?"sservicestranparent" : "sservices"}>
                 <div className="row center">
                     <div className="col-md-12"><h1>Services</h1></div>
                 </div>

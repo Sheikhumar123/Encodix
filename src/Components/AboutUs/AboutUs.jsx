@@ -1,17 +1,18 @@
 import React from 'react'
 import './AboutUs.css'
-import check from './img/check2-circle.svg'
-import task from './img/tasks-solid.svg'
-import box from './img/box-solid.svg'
-import people from './img/user-friends-solid.svg'
-import user from './img/users-solid.svg'
-import cube from './img/cube-solid.svg'
-import file from './img/file-invoice-solid.svg'
-import code from './img/laptop-code-solid.svg'
-import shield from './img/shield-alt-solid.svg'
+import check from './img/check.svg'
+import task from './img/list.svg'
+import box from './img/package.svg'
+import friends from './img/friends.svg'
+import users from './img/user.svg'
+import cube from './img/block.svg'
+import file from './img/receipt.svg'
+import code from './img/coding.svg'
+import shield from './img/shield.svg'
 import Details from './Details'
 import Details2 from './Details2'
 import Services from '../Services/Services'
+
 
 import ContactUs from '../ContactUs/ContactUs'
 
@@ -26,12 +27,11 @@ const AboutUs = () => {
                 <div className="container ">
                     <div className="row aboutcenter">
                         <div className="col-md-12"><h1>About Us</h1></div>
-                    </div>
-                    <div className="row aboutcenter">
+                    
                         <div className="col-md-12"><h4>Introducing Innovative Projects to Facilitate People.</h4></div>
                     </div>
                     <div className="row box">
-                        <div className="col-lg-6 col-md-12">
+                        <div className="col-lg-6 col-md-12 left-div">
                             <h3>Encodix</h3>
                             <p><b> Encodix is a Blockchain Development Company</b> which specially deals in latest innovative Blockchain Services and Solutions.</p>
                             <ul className="services">
@@ -50,7 +50,7 @@ const AboutUs = () => {
 
 
                         </div>
-                        <div className="col-lg-6 col-md-12 center">
+                        <div className="col-lg-6 col-md-12 center right-div">
                             <img src="./img/5.png" alt="" className='rotate' />
 
                         </div>
@@ -60,9 +60,9 @@ const AboutUs = () => {
                     <div className="second">
                         <div className="row">
                             <Details src={task} num={18} heading={"Successful Projects : "} details={"are the Base for our Success because these prvide Experience for more."} />
-                            <Details src={user} num={8} heading={"Team Members : "} details={"help to achieve the Goals and design the thoughts of Clients into Reality."} />
+                            <Details src={users} num={8} heading={"Team Members : "} details={"help to achieve the Goals and design the thoughts of Clients into Reality."} />
                             <Details src={box} num={13} heading={"Innovative Products : "} details={"helping the people to get their work done in an easy way and also helping to digitize the people."} />
-                            <Details src={people} num={12} heading={"Satisfied Clients: "} details={"rerum asperiores dolor molestiae doloribu"} />
+                            <Details src={friends} num={12} heading={"Satisfied Clients: "} details={"rerum asperiores dolor molestiae doloribu"} />
                         </div>
                     </div>
 
@@ -83,11 +83,11 @@ const AboutUs = () => {
 
                 </div>
                 <div>
-                    <Services />
+                    <Services background={true} />
                 </div>
                 <div>
                     {/* <Teams/> */}
-                    <ContactUs />
+                    <ContactUs background={true} />
                 </div>
             </div>
         </div>

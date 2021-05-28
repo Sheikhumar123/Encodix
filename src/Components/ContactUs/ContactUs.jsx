@@ -1,12 +1,29 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './ContactUs.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
-import Gallery from './Gallery/Gallery'
+import Gallery from './Gallery/Gallery';
+import location from './Gallery/img/pin.svg'
+import email from './Gallery/img/message.svg'
+import callus from './Gallery/img/viber.svg'
 
-const ContactUs = () => {
+const ContactUs = ({ background }) => {
+
+    console.log(background);
+    const [state, setstate] = useState();
+
+    useEffect(() => {
+        if (background === true) {
+            setstate(true)
+        } else {
+            setstate(false)
+        }
+    }, [])
+
+
+
     return (
-        <div className="contaniner-fluid contactUs">
+        <div className={state ? "contactUstransparent" : "contactUs"}>
             <div className="">
                 <div className="row">
                     <div className="col-md-12 contactLogo">
@@ -29,7 +46,7 @@ const ContactUs = () => {
                 <div className="row">
                     <div className="col-md-3 info-box">
                         <div className="circletwo">
-                            <FontAwesomeIcon className="icon" icon={faMapMarkerAlt} />
+                            <img src={location} alt="" />
                         </div>
                         <div>
                             <h3>OUR ADDRESS</h3>
@@ -40,7 +57,8 @@ const ContactUs = () => {
                     </div>
                     <div className="col-md-3 info-box">
                         <div className="circletwo">
-                            <FontAwesomeIcon className="icon" icon={faMapMarkerAlt} />
+                            <img src={email} alt="" />
+
                         </div>
                         <div>
                             <h3>Email Us</h3>
@@ -52,7 +70,8 @@ const ContactUs = () => {
                     </div>
                     <div className="col-md-3 info-box">
                         <div className="circletwo">
-                            <FontAwesomeIcon className="icon" icon={faMapMarkerAlt} />
+                            <img src={callus} alt="" />
+
                         </div>
                         <div>
                             <h3>Call Us</h3>

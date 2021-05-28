@@ -9,6 +9,16 @@
      padding-top: 10rem;
     
 }
+.sservicestranparent{
+    background-color: transparent;
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    text-align: center;
+    padding: 5rem;
+     color: #a9b1b6;
+     padding-top: 10rem;
+    
+}
 .circle{
     width: 80px;
     height: 80px;
