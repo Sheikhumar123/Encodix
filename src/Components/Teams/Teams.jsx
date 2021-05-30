@@ -1,10 +1,13 @@
 import React from 'react'
 import "./Teams.css"
 import { Link } from "react-router-dom"
+
+import Fade from 'react-reveal/Fade';
 const Teams = () => {
   return (
 
     <div class="content">
+      <Fade bottom>
       <div class="container-fluid">
 
 
@@ -77,7 +80,7 @@ const Teams = () => {
 
 
       </div>
-
+      </Fade>
     </div>
 
   )

@@ -18,37 +18,6 @@
 .aboutcenter div{
   padding-top: 2rem;
 }
-
-
-
-@keyframes animate-from-top {
-  
-  0% {
-    opacity: 0;
-    margin-top: -2rem;
-  }
-  
-  100% {
-    opacity: 1;
-    margin-top: 2rem;
-  }
-}
-.left-div{
-  animation: animate-from-left 5s; 
-
-}
-@keyframes animate-from-left {
-  
-  0% {
-    opacity: 0;
-    margin-left: -2rem;
-  }
-  
-  100% {
-    opacity: 1;
-    margin-top: 0rem;
-  }
-}
 /* .right-div{
   animation: animate-from-right 5s; 
 

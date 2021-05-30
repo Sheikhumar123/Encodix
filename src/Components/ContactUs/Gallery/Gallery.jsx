@@ -7,10 +7,12 @@ import tronpic from "./img/tronpic.jpg"
 import ethpic from "./img/ethpic.jpg"
 
 
+import Zoom from 'react-reveal/Zoom';
 const Gallery = () => {
     return (
 
         <div className="container" >
+            <Zoom>
             <div className="row">
                 <div className="col-md-4">
                     <div class="card width" >
@@ -52,7 +54,7 @@ const Gallery = () => {
                 </div>
                 
             </div>
-          
+            </Zoom>
 
         </div>
 

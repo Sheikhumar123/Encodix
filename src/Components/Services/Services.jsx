@@ -7,6 +7,8 @@ import square from './img/group.svg'
 import diagram from './img/sitemap.svg'
 import ServiceBox from './ServiceBox/ServiceBox'
 import './Services.css'
+import Fade from 'react-reveal/Fade';
+
 
 const Services = ( {background}) => {
     console.log(background);
@@ -25,13 +27,8 @@ useEffect(() => {
     
     return (
         <div>
-
-
-
-
-
-
             <div className={state?"sservicestranparent" : "sservices"}>
+                <Fade bottom>
                 <div className="row center">
                     <div className="col-md-12"><h1>Services</h1></div>
                 </div>
@@ -43,7 +40,10 @@ useEffect(() => {
                 <div className="row center">
                     <div className="col-md-12"><p>Quality Matters The Most For Us.</p></div>
                 </div>
+                </Fade>
+
                 <div className="row servicedata">
+
 
                     <ServiceBox src={solid} heading={"Decentralised Exchanges"} details={"Decentralised Cryptocurrency exchanges provide users to buy and sell cryptocurrencies. Our software development experts can help you develop the most secure, private and reliable cryptocurrency exchange in the market."} />
                     <ServiceBox src={code} heading={"Smart Contracts Development"} details={"Smart contracts transform the processing of contracts everything can be automated without any centralized administration. our smart contract development services will help you protect your transactions and make your workflow transparent and safe."} />
@@ -54,6 +54,7 @@ useEffect(() => {
                     
 
                 </div>
+
             </div>
 
         </div>
