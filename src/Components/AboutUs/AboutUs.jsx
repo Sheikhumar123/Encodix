@@ -14,7 +14,7 @@ import Details2 from './Details2'
 import Services from '../Services/Services'
 
 // import animation library
-import Fade from 'react-reveal/Fade';
+import {Fade} from 'react-reveal';
 
 import ContactUs from '../ContactUs/ContactUs'
 

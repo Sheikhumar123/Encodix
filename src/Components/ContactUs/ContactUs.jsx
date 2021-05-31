@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './ContactUs.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 import Gallery from './Gallery/Gallery';
 import location from './Gallery/img/pin.svg'
 import email from './Gallery/img/message.svg'
@@ -10,9 +10,36 @@ import Fade from 'react-reveal/Fade';
 
 import Roll from 'react-reveal/Roll';
 
-const ContactUs = ({ background }) => {
 
-    console.log(background);
+
+
+const ContactUs = ({ background }) => {
+    const [fData, setFData] = useState({
+        name: '', email: '', subject:'', message: ''
+      })
+    const handleInput = async (e) => {
+        const name = e.target.name;
+        const value = e.target.value;
+
+        setFData({ ...fData, [name]: value })
+    }
+    
+    const submitData = (e) =>{
+            e.preventDefault()
+            console.log(fData);
+            console.log("hello");
+
+            setFData({
+                name: '', email: '', subject:'', message: ''
+              })
+    
+    }
+
+
+
+
+
+    // console.log(background);
     const [state, setstate] = useState();
 
     useEffect(() => {
@@ -22,6 +49,8 @@ const ContactUs = ({ background }) => {
             setstate(false)
         }
     }, [])
+
+
 
 
 
@@ -110,34 +139,34 @@ const ContactUs = ({ background }) => {
                                 <div class="col-md-6">
                                     <div class="form-input mt-25">
                                         <div class="default1">
-                                            <input name="name" type="text" placeholder="Name" />
+                                            <input name="name" value={fData.name} type="text" placeholder="Name" onChange={handleInput} />
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-input mt-25">
                                         <div class=" default1">
-                                            <input type="email" name="email" placeholder="Email" />
+                                            <input type="email" value={fData.email} name="email" placeholder="Email" onChange={handleInput} />
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-input mt-25">
                                         <div class="default1">
-                                            <input type="text" name="subject" placeholder="Subject" />
+                                            <input type="text" value={fData.subject} name="subject" placeholder="Subject" onChange={handleInput} />
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-input mt-25">
                                         <div class=" default1">
-                                            <textarea name="massage" placeholder="Massage"></textarea>
+                                            <textarea name="message" value={fData.message} placeholder="Massage" onChange={handleInput}></textarea>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="" >
-                                        <input type="button" className="btn1" value="Send Message" />
+                                        <input type="button" onClick={submitData} className="btn1" value="Send Message" />
                                     </div>
                                 </div>
                             </div>
